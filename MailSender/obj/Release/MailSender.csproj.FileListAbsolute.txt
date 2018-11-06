@@ -1,0 +1,44 @@
+C:\Users\Любовь\Desktop\MailSender\MailSender\bin\Release\MailSender.exe.config
+C:\Users\Любовь\Desktop\MailSender\MailSender\bin\Release\MailSender.exe
+C:\Users\Любовь\Desktop\MailSender\MailSender\bin\Release\MailSender.pdb
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\ShinyBlue.baml
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MainWindow.g.cs
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MessageSendCompletedDlg.g.cs
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\App.g.cs
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender_MarkupCompile.cache
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender_MarkupCompile.lref
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MainWindow.baml
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MessageSendCompletedDlg.baml
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender.g.resources
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender.Properties.Resources.resources
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender.csproj.GenerateResource.cache
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender.csproj.CoreCompileInputs.cache
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender.exe
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender.pdb
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender.csprojAssemblyReference.cache
+C:\Users\Любовь\Desktop\MailSender\MailSender\bin\Release\MailSenderLib.dll
+C:\Users\Любовь\Desktop\MailSender\MailSender\bin\Release\MailSenderLib.pdb
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\MailSender.csproj.CopyComplete
+C:\Users\Любовь\Desktop\MailSender\MailSender\obj\Release\App.baml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\bin\Release\MailSender.exe.config
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\bin\Release\MailSender.exe
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\bin\Release\MailSender.pdb
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\bin\Release\MailSenderLib.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\bin\Release\MailSenderLib.pdb
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender.csprojAssemblyReference.cache
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\ShinyBlue.baml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MainWindow.g.cs
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MessageSendCompletedDlg.g.cs
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\App.g.cs
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender_MarkupCompile.cache
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender_MarkupCompile.lref
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\App.baml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MainWindow.baml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MessageSendCompletedDlg.baml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender.g.resources
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender.Properties.Resources.resources
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender.csproj.GenerateResource.cache
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender.csproj.CoreCompileInputs.cache
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender.csproj.CopyComplete
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender.exe
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSender\obj\Release\MailSender.pdb

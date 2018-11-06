@@ -1,0 +1,17 @@
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\bin\Release\MailSenderLib.dll
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\bin\Release\MailSenderLib.pdb
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\obj\Release\MailSenderLib.csprojResolveAssemblyReference.cache
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\obj\Release\MailSenderLib.csproj.CoreCompileInputs.cache
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\obj\Release\MailSenderLib.dll
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\obj\Release\MailSenderLib.pdb
+C:\Users\Любовь\Desktop\MailSender\MailSenderLib\bin\Release\MailSenderLib.dll
+C:\Users\Любовь\Desktop\MailSender\MailSenderLib\bin\Release\MailSenderLib.pdb
+C:\Users\Любовь\Desktop\MailSender\MailSenderLib\obj\Release\MailSenderLib.csprojAssemblyReference.cache
+C:\Users\Любовь\Desktop\MailSender\MailSenderLib\obj\Release\MailSenderLib.csproj.CoreCompileInputs.cache
+C:\Users\Любовь\Desktop\MailSender\MailSenderLib\obj\Release\MailSenderLib.dll
+C:\Users\Любовь\Desktop\MailSender\MailSenderLib\obj\Release\MailSenderLib.pdb
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSenderLib\bin\Release\MailSenderLib.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSenderLib\bin\Release\MailSenderLib.pdb
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSenderLib\obj\Release\MailSenderLib.csproj.CoreCompileInputs.cache
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSenderLib\obj\Release\MailSenderLib.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\lesson_1\MailSender\MailSender\MailSenderLib\obj\Release\MailSenderLib.pdb

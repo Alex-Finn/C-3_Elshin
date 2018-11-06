@@ -1,0 +1,12 @@
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\bin\Debug\MailSenderLib.dll
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\bin\Debug\MailSenderLib.pdb
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\obj\Debug\MailSenderLib.csprojResolveAssemblyReference.cache
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\obj\Debug\MailSenderLib.csproj.CoreCompileInputs.cache
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\obj\Debug\MailSenderLib.dll
+C:\Users\shmac\Documents\!GB\C#3\L1\src\MailSender\MailSenderLib\obj\Debug\MailSenderLib.pdb
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSenderLib\bin\Debug\MailSenderLib.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSenderLib\bin\Debug\MailSenderLib.pdb
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSenderLib\obj\Debug\MailSenderLib.csprojAssemblyReference.cache
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSenderLib\obj\Debug\MailSenderLib.csproj.CoreCompileInputs.cache
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSenderLib\obj\Debug\MailSenderLib.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSenderLib\obj\Debug\MailSenderLib.pdb
