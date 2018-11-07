@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6EE0B20B-EA7D-4026-B4E9-2250A0FDF909}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MailSender</RootNamespace>
-    <AssemblyName>MailSender</AssemblyName>
+    <RootNamespace>WpfTestMailSender</RootNamespace>
+    <AssemblyName>WpfTestMailSender</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,7 +56,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerClass.cs" />
+    <Compile Include="SmtpClientsClass.cs" />
+    <Page Include="MailSenderWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -64,10 +69,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="AppConfigClass.cs" />
+    <Compile Include="DBClass.cs" />
+    <Compile Include="EmailSendServiceClass.cs" />
+    <Compile Include="MailSenderWindow.xaml.cs">
+      <DependentUpon>MailSenderWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MessageSendCompletedDlg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,12 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MailSenderLib\MailSenderLib.csproj">
-      <Project>{10b0f10b-0044-40fa-93bc-232be407c66f}</Project>
-      <Name>MailSenderLib</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

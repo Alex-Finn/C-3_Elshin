@@ -1,27 +1,30 @@
 ﻿using System;
-using System.Net;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
-using System.Net.Mail;
-using MailSenderLib;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
-namespace MailSender
+namespace WpfTestMailSender
 {
-	partial class MainWindow : Window
+    /// <summary>
+    /// Главное окно программы
+    /// </summary>
+    public partial class MainWindow : Window
     {
-		public MainWindow() => InitializeComponent();
-	    void Button_Click(object sender, RoutedEventArgs e)
-	    {
-		    try
-		    {
-			    var send = new EmailSender();
-			    send.Send(UserNameTextBox.Text, PasswordEdit.Password);
-		    }
-		    catch (Exception exception)
-		    {
-			    //MessageBox.Show(error.Message, "При отправке сообщения возникла ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-			    var dlg = new MessageSendCompletedDlg(exception.StackTrace);
-			    dlg.ShowDialog();
-		    }
-	    }
-	}
+        public MainWindow() => InitializeComponent();
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MailSenderWindow msw = new MailSenderWindow();
+            msw.ShowDialog();
+        }
+    }
 }

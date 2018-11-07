@@ -2,10 +2,10 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace MailSender
+namespace WpfTestMailSender
 {
     /// <summary>
-    /// Логика взаимодействия для MessageSendCompletedDlg.xaml
+    /// Всплывающее окно с текстом ошибки
     /// </summary>
     public partial class MessageSendCompletedDlg : Window
     {
@@ -14,7 +14,7 @@ namespace MailSender
         {
             InitializeComponent();
 
-	        MainLabel.Content = mess;
+	        textBox.Text = mess;
         }
 
         private void Button_OnClick(object sender, RoutedEventArgs e)
