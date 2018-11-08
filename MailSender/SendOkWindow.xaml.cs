@@ -15,17 +15,18 @@ using System.Windows.Shapes;
 namespace WpfTestMailSender
 {
     /// <summary>
-    /// Главное окно программы
+    /// Логика взаимодействия для SendEndWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SendOkWindow : Window
     {
-        public MainWindow() => InitializeComponent();
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public SendOkWindow()
         {
-            MailSenderWindow msw = new MailSenderWindow();
-            msw.Owner = this;
-            msw.ShowDialog();
+            InitializeComponent();
+        }
+
+        private void btnOK_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

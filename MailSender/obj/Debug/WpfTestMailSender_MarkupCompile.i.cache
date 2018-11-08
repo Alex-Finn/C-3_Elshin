@@ -1,20 +1,20 @@
-﻿MailSender
+﻿WpfTestMailSender
 
 
 winexe
 C#
 .cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\
-MailSender
+WpfTestMailSender
 none
 false
 DEBUG;TRACE
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\App.xaml
-4945223332
+51712401085
 
-15356497406
-14-851287184
-MailSenderWindow.xaml;MainWindow.xaml;MessageSendCompletedDlg.xaml;ShinyBlue.xaml;
+171830445784
+13-1662647192
+MailSenderWindow.xaml;MainWindow.xaml;SendErrorWindow.xaml;SendOkWindow.xaml;ShinyBlue.xaml;
 
-False
+True
 
