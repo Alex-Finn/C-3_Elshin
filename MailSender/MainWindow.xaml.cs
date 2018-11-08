@@ -24,6 +24,7 @@ namespace WpfTestMailSender
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MailSenderWindow msw = new MailSenderWindow();
+            msw.Owner = this;
             msw.ShowDialog();
         }
     }

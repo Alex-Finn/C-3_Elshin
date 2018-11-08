@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
         xmlns:local="clr-namespace:WpfTestMailSender"
         Title="Mail Sender" 
-        Height="203.41" 
-        Width="250.984" 
+        Height="211.41" 
+        Width="691.984" 
         HorizontalAlignment="Left" 
         VerticalAlignment="Top" 
         MinWidth="225" 
@@ -15,9 +15,9 @@
         ResizeMode="CanMinimize">
     <Window.Resources>
         <ResourceDictionary>
-            <!--<ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ShinyBlue.xaml"/>
-            </ResourceDictionary.MergedDictionaries>-->
+            </ResourceDictionary.MergedDictionaries>
 
             <Style TargetType="{x:Type Label}">
                 <Setter Property="Foreground">
@@ -32,31 +32,53 @@
                 </Setter>
             </Style>
         </ResourceDictionary>
-    </Window.Resources>
-    <Grid Margin="0,0,4,-7">
+    </Window.Resources>  
+    
+    <Grid Margin="0,0,4,0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="211*"/>
+            <ColumnDefinition Width="471*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="User name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"  />
-        <Label Content="Password:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" />
-        <TextBox x:Name="UserNameTextBox" Margin="82,14,2,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <Label Content="User name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="67"  />
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="26" Width="63" />
+        <TextBox 
+            x:Name="UserNameTextBox" 
+            Margin="82,14,10,0" 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top" Height="22" VerticalScrollBarVisibility="Disabled">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
         <PasswordBox
             x:Name="PasswordEdit" 
-            Margin="82,45,2,0" 
-            VerticalAlignment="Top">
+            Margin="82,45,10,0" 
+            VerticalAlignment="Top" Height="20">
             <PasswordBox.Effect>
                 <DropShadowEffect/>
             </PasswordBox.Effect>
         </PasswordBox>
 
-        <Button
-                Click="Button_Click" Margin="34,88,34,48">
+        <Button x:Name="btnSendEmail"
+                Click="btnSendEmail_Click" Grid.Column="1" Margin="186,135,185,10" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="100">
             <Button.Content>
                 <StackPanel>
                     <TextBlock Text="Send" FontSize="20" Height="28" Width="48"/>
-                    <Image />
                 </StackPanel>
             </Button.Content>
         </Button>
+        <Label Content="Subject:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26" Width="63" />
+        <TextBox 
+            Name="tbLetterSubject" 
+            Margin="82,72,10,0" 
+            TextWrapping="Wrap" 
+            Text="some subject..."
+            VerticalAlignment="Top" Height="93" VerticalScrollBarVisibility="Auto"/>
+        <TextBox 
+            x:Name="tbLetterBody" 
+            Margin="10,14,10,0" 
+            TextWrapping="Wrap" 
+            Text="Type your text here..." 
+            VerticalAlignment="Top" Height="107" Grid.Column="1" VerticalScrollBarVisibility="Auto"/>
     </Grid>
 </Window>

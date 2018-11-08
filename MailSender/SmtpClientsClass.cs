@@ -12,6 +12,12 @@ namespace WpfTestMailSender
     /// </summary>
     public static class SmtpClientsClass
     {
+        static public List<string> listStrMails = new List<string>
+            {
+                "testEmail@gmail.com",
+                "email@yandex.ru",
+                "user@gmail.com"
+            };  // Список email'ов кому мы отправляем письмо
         public static string yandexRuServer = "smtp.yandex.ru";
         public static string gmailComServer = "smtp.gmail.com";
         public static string mailRuServer = "smtp.mail.ru";

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Mail;
+using System.Windows;
 
 namespace WpfTestMailSender
 {
@@ -23,32 +24,46 @@ namespace WpfTestMailSender
         {
             var user = strUser;
             var pass = strPass;
-
-            try
+            
+            foreach (string mail in SmtpClientsClass.listStrMails)
             {
-                using (var message = new MailMessage(
-                    from: SmtpClientsClass.fromAddress,
-                    to: SmtpClientsClass.toAddress,
-                    subject: SmtpClientsClass.letterSubject,
-                    body: SmtpClientsClass.letterBody))
+                // Используем using, чтобы гарантированно удалить объект MailMessage после использования
+                try
                 {
-                    message.IsBodyHtml = false; // Не используем html в теле письма
-
-                    using (var client = new SmtpClient(
-                        host: SmtpClientsClass.yandexRuServer,
-                        port: SmtpClientsClass.yandexRuPort))
+                    using (var message = new MailMessage(
+                        from: SmtpClientsClass.fromAddress,
+                        to: mail,
+                        subject: SmtpClientsClass.letterSubject,
+                        body: SmtpClientsClass.letterBody))
                     {
-                        client.EnableSsl = true;
-                        client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                        client.UseDefaultCredentials = false;
-                        client.Credentials = new NetworkCredential(user, pass);
-                        client.Send(message);
+                        message.IsBodyHtml = false; // Не используем html в теле письма
+
+                        using (var client = new SmtpClient(
+                            host: SmtpClientsClass.yandexRuServer,
+                            port: SmtpClientsClass.yandexRuPort))
+                        {
+                            client.EnableSsl = true;
+                            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                            client.UseDefaultCredentials = false;
+                            client.Credentials = new NetworkCredential(user, pass);
+                            //try
+                            //{
+                                client.Send(message);
+                            //}
+                            //catch (Exception ex)
+                            //{
+                            //    MessageBox.Show("Невозможно отправить письмо " + ex.ToString());
+                            //}
+                        }
                     }
                 }
-            }
-            catch (SmtpException error)
-            {
-                throw new SmtpException(error.Message);
+                catch (SmtpException error)
+                {
+                    throw new SmtpException(error.Message);
+                }
+                //MessageBox.Show("Работа завершена.");
+                var okWindow = new SendOkWindow();
+                okWindow.ShowDialog();
             }
         }
     }

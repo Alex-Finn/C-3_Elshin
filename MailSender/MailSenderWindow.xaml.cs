@@ -2,6 +2,8 @@
 using System.Net;
 using System.Windows;
 using System.Net.Mail;
+using System.Collections.Generic;
+using System.Windows.Data;
 
 namespace WpfTestMailSender
 {
@@ -10,20 +12,26 @@ namespace WpfTestMailSender
     /// </summary>
 	partial class MailSenderWindow : Window
     {
-		public MailSenderWindow() => InitializeComponent();
-	    void Button_Click(object sender, RoutedEventArgs e)
+        public MailSenderWindow()
+        {
+            InitializeComponent();
+            //this.DataContext = SmtpClientsClass.letterSubject + SmtpClientsClass.letterBody;
+        }
+
+        void btnSendEmail_Click(object sender, RoutedEventArgs e)
 	    {
-		    try
-		    {
-			    var send = new EmailSendServiceClass();
-			    send.Send(UserNameTextBox.Text, PasswordEdit.Password);
-		    }
-		    catch (Exception exception)
-		    {
-			    //MessageBox.Show(error.Message, "При отправке сообщения возникла ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-			    var dlg = new MessageSendCompletedDlg(exception.Message);
-			    dlg.ShowDialog();
-		    }
-	    }
-	}
+            try
+            {
+                var send = new EmailSendServiceClass();
+                send.Send(UserNameTextBox.Text, PasswordEdit.Password);
+            }
+            catch (Exception exception)
+            {
+                //MessageBox.Show(error.Message, "При отправке сообщения возникла ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                var dlg = new SendErrorWindow(exception.Message);
+                dlg.ShowDialog();
+            }
+        }
+
+    }
 }
