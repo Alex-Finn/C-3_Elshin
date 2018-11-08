@@ -7,13 +7,12 @@ namespace WpfTestMailSender
     /// <summary>
     /// Всплывающее окно с текстом ошибки
     /// </summary>
-    public partial class MessageSendCompletedDlg : Window
+    public partial class SendErrorWindow : Window
     {
 		
-        public MessageSendCompletedDlg(string mess)
+        public SendErrorWindow(string mess)
         {
             InitializeComponent();
-
 	        textBox.Text = mess;
         }
 
