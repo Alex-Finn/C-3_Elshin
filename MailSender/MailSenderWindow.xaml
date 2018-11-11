@@ -72,7 +72,7 @@
             Name="tbLetterSubject" 
             Margin="82,72,10,0" 
             TextWrapping="Wrap" 
-            Text="some subject..."
+            Text="text" 
             VerticalAlignment="Top" Height="93" VerticalScrollBarVisibility="Auto"/>
         <TextBox 
             x:Name="tbLetterBody" 

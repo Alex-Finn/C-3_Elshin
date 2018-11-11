@@ -27,5 +27,30 @@ namespace WpfTestMailSender
             msw.Owner = this;
             msw.ShowDialog();
         }
+
+        private void miExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void miNew_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Нажата кнопка New\n" + e.Source.ToString());
+        }
+
+        private void miOpen_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Нажата кнопка Open\n" + e.Source.ToString());
+        }
+
+        private void miLoad_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Нажата кнопка Load\n" + e.Source.ToString());
+        }
+
+        private void btnClock_Click(object sender, RoutedEventArgs e)
+        {
+            tabControl.SelectedItem = tabPlanner;
+        }
     }
 }

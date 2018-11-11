@@ -15,7 +15,7 @@ namespace WpfTestMailSender
         public MailSenderWindow()
         {
             InitializeComponent();
-            //this.DataContext = SmtpClientsClass.letterSubject + SmtpClientsClass.letterBody;
+            this.DataContext = SmtpClientsClass.letterSubject;
         }
 
         void btnSendEmail_Click(object sender, RoutedEventArgs e)
