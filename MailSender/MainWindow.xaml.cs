@@ -19,7 +19,13 @@ namespace WpfTestMailSender
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow() => InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+            cbSenderSelect.ItemsSource = VariablesClass.Senders;
+            cbSenderSelect.DisplayMemberPath = "Key";
+            cbSenderSelect.SelectedValuePath = "Value";
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

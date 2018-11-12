@@ -77,11 +77,13 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PasswordClass.cs" />
     <Compile Include="SchedulerClass.cs" />
     <Compile Include="SendOkWindow.xaml.cs">
       <DependentUpon>SendOkWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SmtpClientsClass.cs" />
+    <Compile Include="VariablesClass.cs" />
     <Page Include="MailSenderWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -112,6 +114,10 @@
     <Page Include="ShinyBlue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WhistlerBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
