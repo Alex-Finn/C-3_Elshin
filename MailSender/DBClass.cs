@@ -7,9 +7,17 @@ using System.Threading.Tasks;
 namespace WpfTestMailSender
 {
     /// <summary>
-    /// Класс логики базы данных
+    /// Класс, который отвечает за работу с базой данных
     /// </summary>
-    class DBClass
+    public class DBclass
     {
+        private EmailsDataContext emails = new EmailsDataContext();
+        public IQueryable<Email> Emails
+        {
+            get
+            {
+                return from c in emails.Email select c;
+            }
+        }
     }
 }

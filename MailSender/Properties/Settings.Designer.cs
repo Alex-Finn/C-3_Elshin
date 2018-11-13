@@ -22,5 +22,16 @@ namespace WpfTestMailSender.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DbMails.mdf;I" +
+            "ntegrated Security=True")]
+        public string DbMailsConnectionString {
+            get {
+                return ((string)(this["DbMailsConnectionString"]));
+            }
+        }
     }
 }

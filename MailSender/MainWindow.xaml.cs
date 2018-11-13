@@ -25,6 +25,8 @@ namespace WpfTestMailSender
             cbSenderSelect.ItemsSource = VariablesClass.Senders;
             cbSenderSelect.DisplayMemberPath = "Key";
             cbSenderSelect.SelectedValuePath = "Value";
+            DBclass db = new DBclass();
+            dgEmails.ItemsSource = db.Emails;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -57,6 +59,11 @@ namespace WpfTestMailSender
         private void btnClock_Click(object sender, RoutedEventArgs e)
         {
             tabControl.SelectedItem = tabPlanner;
+        }
+
+        private void tabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

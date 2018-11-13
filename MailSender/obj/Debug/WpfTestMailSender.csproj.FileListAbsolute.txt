@@ -39,3 +39,6 @@ K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WpfTestMailSender.csproj.CopyComplete
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WhistlerBlue.baml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WpfTestMailSender_Content.g.cs
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\DbMails.mdf
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\DbMails_log.ldf

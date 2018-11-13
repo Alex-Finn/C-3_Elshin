@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:WpfTestMailSender"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="750" Icon="images/bigletter.png">
-    <DockPanel>
-        
+        Title="MainWindow" Height="450" Width="750" Icon="images/bigletter.png" ResizeMode="CanMinimize">
+    <Grid>
+
         <Menu Name="menu" 
               Height="25" VerticalAlignment="Top" DockPanel.Dock="Top">
             <MenuItem x:Name="miFile" Header="File" Height="25" Margin="0" VerticalAlignment="Top" Width="Auto" HorizontalAlignment="Center" VerticalContentAlignment="Center">
@@ -19,10 +19,10 @@
                 <MenuItem x:Name="miExit" Header="Exit" Height="Auto" Width="Auto" Click="miExit_Click"/>
             </MenuItem>
         </Menu>
-        
-        <TabControl x:Name="tabControl" SelectionChanged="tabControl_SelectionChanged" DockPanel.Dock="Top">
+
+        <TabControl x:Name="tabControl" SelectionChanged="tabControl_SelectionChanged" VerticalAlignment="Top" Margin="0,25,0,0" Height="90">
             <TabItem Header="Формирование группы рассылки" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">
-                <DockPanel Background="#FFE5E5E5" Height="auto">
+                <DockPanel Background="#FFE5E5E5" Height="auto" Width="auto">
 
                     <ToolBarTray Height="65" Width="auto" VerticalAlignment="Top">
                         <ToolBar x:Name="tbSender" Height="30" VerticalAlignment="Top" Width="500" HorizontalAlignment="Left">
@@ -141,7 +141,7 @@
                             </Button>
                         </ToolBar>
                     </ToolBarTray>
-                    <DataGrid Margin="0,65,0,0"/>
+
                 </DockPanel>
             </TabItem>
             <TabItem x:Name="tabPlanner" Header="Планировщик" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">
@@ -197,6 +197,7 @@
             <TabItem Header="Статистика" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-        </TabControl>    
-    </DockPanel>
+        </TabControl>
+        <DataGrid x:Name="dgEmails" Margin="0,115,0,0"/>
+    </Grid>
 </Window>
