@@ -1,9 +1,13 @@
 ﻿--INSERT INTO Email(Id, Value,
 --Name) VALUES (10, 'value10', 'name10')
 
+--update Email set Value = 'value8@mail.com' where Id = 8
+--update Email set Value = 'value9@mail.com' where Id = 9
+--update Email set Value = 'value10@mail.com' where Id = 10
+
 select
 *
-from Email
+from email
 
 --CREATE TABLE [dbo].[Email] (
 --[Id] int NOT NULL,

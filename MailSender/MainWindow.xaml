@@ -7,7 +7,7 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="750" Icon="images/bigletter.png" ResizeMode="CanMinimize">
-    <Grid>
+    <DockPanel>
 
         <Menu Name="menu" 
               Height="25" VerticalAlignment="Top" DockPanel.Dock="Top">
@@ -20,13 +20,13 @@
             </MenuItem>
         </Menu>
 
-        <TabControl x:Name="tabControl" SelectionChanged="tabControl_SelectionChanged" VerticalAlignment="Top" Margin="0,25,0,0" Height="90">
+        <TabControl x:Name="tabControl" SelectionChanged="tabControl_SelectionChanged">
             <TabItem Header="Формирование группы рассылки" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">
                 <DockPanel Background="#FFE5E5E5" Height="auto" Width="auto">
 
                     <ToolBarTray Height="65" Width="auto" VerticalAlignment="Top">
                         <ToolBar x:Name="tbSender" Height="30" VerticalAlignment="Top" Width="500" HorizontalAlignment="Left">
-                            <Label x:Name="iSender" Content="Выбрать отправителя" Height="25" VerticalAlignment="Top" Width="130"/>
+                            <Label x:Name="lSender" Content="Выбрать отправителя" Height="25" VerticalAlignment="Top" Width="130"/>
                             <ComboBox x:Name="cbSenderSelect" 
                                       Height="25" 
                                       Margin="0" 
@@ -75,7 +75,7 @@
                                       Width = "270"
                                       SelectedIndex = "0" 
                                       ToolTip = "Выбрать smtp-сервер">
-                                <ComboBoxItem Content="smtp1"/>
+                                <ComboBoxItem Content="465"/>
                                 <ComboBoxItem Content="smtp2"/>
                             </ComboBox>
                             <Button x:Name = "btnAddSmtp" 
@@ -141,11 +141,11 @@
                             </Button>
                         </ToolBar>
                     </ToolBarTray>
-
+                    <DataGrid x:Name="dgEmails" Margin="-731,65,0,0" HorizontalAlignment="Left" Width="736"/>
                 </DockPanel>
             </TabItem>
             <TabItem x:Name="tabPlanner" Header="Планировщик" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFE5E5E5" RenderTransformOrigin="0.474,0.115">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition/>
@@ -153,11 +153,11 @@
 
                     <StackPanel Grid.Column="0" Margin="3">
                         <Calendar x:Name="cldSchedulDateTimes" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionMode="MultipleRange"/>
-                        <xctk:TimePicker/>
+                        <xctk:TimePicker x:Name="tbTimePicker"/>
                         <Button x:Name="btnSend" 
                                 Margin ="0" 
                                 Width="auto"
-                                Height = "25">
+                                Height = "25" Click="btnSend_Click">
                             <StackPanel Orientation = "Horizontal">
                                 <Image Source = "Images/clock.png" Width = "16" Height = "16" />
                                 <TextBlock Margin =" 3,0,0,0" Text =" Отправить запланированно" VerticalAlignment =" Center"/>
@@ -166,20 +166,12 @@
                         <Button x:Name="btnSendAtOnce" 
                                 Margin ="0" 
                                 Width="auto"
-                                Height = "25">
+                                Height = "25" Click="btnSendAtOnce_Click">
                             <StackPanel Orientation = "Horizontal">
                                 <Image Source = "Images/letter.png" Width = "16" Height = "16" />
                                 <TextBlock Margin =" 3,0,0,0" Text =" Отправить сразу" VerticalAlignment =" Center"/>
                             </StackPanel>
                         </Button>
-                        <Button 
-                            Content="Launch Mail Sender" 
-                            Margin="0" 
-                            VerticalAlignment="Top" 
-                            Click="Button_Click"                              
-                            VerticalContentAlignment="Center" 
-                            HorizontalContentAlignment="Center" 
-                            Padding="10"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
@@ -198,6 +190,6 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <DataGrid x:Name="dgEmails" Margin="0,115,0,0"/>
-    </Grid>
+
+    </DockPanel>
 </Window>

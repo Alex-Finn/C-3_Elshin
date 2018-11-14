@@ -1,5 +1,4 @@
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\ShinyBlue.baml
-K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSenderWindow.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MainWindow.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\App.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WpfTestMailSender_MarkupCompile.cache
@@ -8,7 +7,6 @@ K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\WpfTestMailSender.exe
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\WpfTestMailSender.pdb
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\App.baml
-K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSenderWindow.baml
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MainWindow.baml
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WpfTestMailSender.g.resources
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WpfTestMailSender.Properties.Resources.resources
@@ -20,7 +18,6 @@ K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\SendOkWindow.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\SendErrorWindow.baml
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\SendOkWindow.baml
-K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WpfTestMailSender.csprojAssemblyReference.cache
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\Xceed.Wpf.AvalonDock.dll
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
