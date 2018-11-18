@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfTestMailSender.ViewModel;
 
 namespace WpfTestMailSender
 {
@@ -22,11 +23,18 @@ namespace WpfTestMailSender
         public MainWindow()
         {
             InitializeComponent();
+
             cbSenderSelect.ItemsSource = VariablesClass.Senders;
             cbSenderSelect.DisplayMemberPath = "Key";
             cbSenderSelect.SelectedValuePath = "Value";
-            DBclass db = new DBclass();
-            dgEmails.ItemsSource = db.Emails;
+            cbSenderSelect.SelectedIndex = 0;
+
+            cbSmtpSelect.ItemsSource = VariablesClass.SmtpServers;
+            cbSmtpSelect.DisplayMemberPath = "Key";
+            cbSmtpSelect.SelectedValuePath = "Value";
+            cbSmtpSelect.SelectedIndex = 0;
+            //DBclass db = new DBclass();
+            //dgEmails.ItemsSource = db.Emails;
         }               
 
         private void miExit_Click(object sender, RoutedEventArgs e)
@@ -74,7 +82,10 @@ namespace WpfTestMailSender
                 return;
             }
             EmailSendServiceClass emailSender = new EmailSendServiceClass(strLogin, strPassword);
-            emailSender.SendMails((IQueryable<Email>)dgEmails.ItemsSource);
+            var locator = (ViewModelLocator)FindResource("Locator");
+            emailSender.SendMails(locator.Main.Emails);
+            
+            //emailSender.SendMails((IQueryable<Email>)dgEmails.ItemsSource);
         }
 
         private void btnSend_Click(object sender, RoutedEventArgs e)
@@ -93,8 +104,11 @@ namespace WpfTestMailSender
                 return;
             }
             EmailSendServiceClass emailSender = new EmailSendServiceClass(cbSenderSelect.Text,
-            cbSenderSelect.SelectedValue.ToString());
-            sc.SendEmails(dtSendDateTime, emailSender, (IQueryable<Email>)dgEmails.ItemsSource);
+                cbSenderSelect.SelectedValue.ToString());
+            var locator = (ViewModelLocator)FindResource("Locator");
+            sc.SendEmails(dtSendDateTime, emailSender, locator.Main.Emails);            
+            
+            //sc.SendEmails(dtSendDateTime, emailSender, (IQueryable<Email>)dgEmails.ItemsSource);
         }
     }
 }

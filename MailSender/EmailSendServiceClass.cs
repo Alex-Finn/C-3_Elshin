@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Mail;
 using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace WpfTestMailSender
 {
@@ -47,7 +48,7 @@ namespace WpfTestMailSender
                 }
             }
         } //private void SendMail(string mail, string name)
-        public void SendMails (IQueryable<Email> emails)
+        public void SendMails (ObservableCollection<Email> emails)
         {
             foreach (Email email in emails)
             {

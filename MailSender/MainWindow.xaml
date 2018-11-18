@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
         xmlns:local="clr-namespace:WpfTestMailSender"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:View="clr-namespace:WpfTestMailSender.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="750" Icon="images/bigletter.png" ResizeMode="CanMinimize">
+        Title="MainWindow" Height="450" Width="750" Icon="images/bigletter.png" 
+        ResizeMode="CanMinimize" 
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
     <DockPanel>
 
         <Menu Name="menu" 
@@ -21,10 +24,23 @@
         </Menu>
 
         <TabControl x:Name="tabControl" SelectionChanged="tabControl_SelectionChanged">
-            <TabItem Header="Формирование группы рассылки" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">
-                <DockPanel Background="#FFE5E5E5" Height="auto" Width="auto">
-
-                    <ToolBarTray Height="65" Width="auto" VerticalAlignment="Top">
+            <!--<TabItem Header="Формирование группы рассылки" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">
+                <DockPanel Background="#FFE5E5E5" Height="auto" Width="auto">-->
+            <TabItem Header = "Формирование группы рассылки" x:Name = "tabMakingMailGroup" >
+                <Grid Background = "#FFE5E5E5" >
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height = "60" />
+                        <RowDefinition Height = "Auto" />
+                    </Grid.RowDefinitions >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width = "92*" />
+                        <ColumnDefinition Width = "275*" />
+                    </Grid.ColumnDefinitions >
+                    <ToolBarTray HorizontalAlignment = "Stretch" 
+                                 VerticalAlignment = "Stretch" 
+                                 Width = "Auto" Height = "Auto" 
+                                 Grid.ColumnSpan = "2" >
+                        <!--<ToolBarTray Height="65" Width="auto" VerticalAlignment="Top">-->
                         <ToolBar x:Name="tbSender" Height="30" VerticalAlignment="Top" Width="500" HorizontalAlignment="Left">
                             <Label x:Name="lSender" Content="Выбрать отправителя" Height="25" VerticalAlignment="Top" Width="130"/>
                             <ComboBox x:Name="cbSenderSelect" 
@@ -75,8 +91,6 @@
                                       Width = "270"
                                       SelectedIndex = "0" 
                                       ToolTip = "Выбрать smtp-сервер">
-                                <ComboBoxItem Content="465"/>
-                                <ComboBoxItem Content="smtp2"/>
                             </ComboBox>
                             <Button x:Name = "btnAddSmtp" 
                                     Height="25" Width="25" 
@@ -141,8 +155,11 @@
                             </Button>
                         </ToolBar>
                     </ToolBarTray>
-                    <DataGrid x:Name="dgEmails" Margin="-731,65,0,0" HorizontalAlignment="Left" Width="736"/>
-                </DockPanel>
+                    <!--<DataGrid x:Name="dgEmails" Margin="-731,65,0,0" HorizontalAlignment="Left" Width="736"/>-->
+                    <!--</DockPanel>-->
+                    <View:EmailInfoView x:Name = "emailInfo" Grid.Row = "1" Grid.ColumnSpan = "1" Grid.Column="1" />
+                    <View:SaveEmailView x:Name = "saveEmail" Grid.Row = "1" />
+                </Grid>
             </TabItem>
             <TabItem x:Name="tabPlanner" Header="Планировщик" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">
                 <Grid Background="#FFE5E5E5" RenderTransformOrigin="0.474,0.115">
