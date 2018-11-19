@@ -4,14 +4,10 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WpfTestMailSender.Service;
 
 namespace WpfTestMailSender.Services    
 {
-    public interface IDataAccessService
-    {
-        ObservableCollection<Email> GetEmails();
-        int CreateEmail(Email email);
-    }
     public class DataAccessService : IDataAccessService
     {
         EmailsDataContext context;

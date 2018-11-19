@@ -1,6 +1,7 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using System.Collections.ObjectModel;
+using WpfTestMailSender.Service;
 using WpfTestMailSender.Services;
 
 namespace WpfTestMailSender.ViewModel

@@ -9,6 +9,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="750" Icon="images/bigletter.png" 
         ResizeMode="CanMinimize" 
+        
         DataContext="{Binding Main, Source={StaticResource Locator}}">
     <DockPanel>
 
@@ -33,8 +34,8 @@
                         <RowDefinition Height = "Auto" />
                     </Grid.RowDefinitions >
                     <Grid.ColumnDefinitions >
-                        <ColumnDefinition Width = "92*" />
-                        <ColumnDefinition Width = "275*" />
+                        <ColumnDefinition Width = "77*" />
+                        <ColumnDefinition Width = "290*" />
                     </Grid.ColumnDefinitions >
                     <ToolBarTray HorizontalAlignment = "Stretch" 
                                  VerticalAlignment = "Stretch" 
@@ -157,8 +158,8 @@
                     </ToolBarTray>
                     <!--<DataGrid x:Name="dgEmails" Margin="-731,65,0,0" HorizontalAlignment="Left" Width="736"/>-->
                     <!--</DockPanel>-->
-                    <View:EmailInfoView x:Name = "emailInfo" Grid.Row = "1" Grid.ColumnSpan = "1" Grid.Column="1" />
-                    <View:SaveEmailView x:Name = "saveEmail" Grid.Row = "1" />
+                    <View:EmailInfoView x:Name = "emailInfo" Grid.ColumnSpan = "1" Grid.Column="1" Margin="2,1,6,-145" Grid.Row="1" />
+                    <View:SaveEmailView x:Name = "saveEmail" Grid.Row = "1" HorizontalContentAlignment="Center" />
                 </Grid>
             </TabItem>
             <TabItem x:Name="tabPlanner" Header="Планировщик" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto">

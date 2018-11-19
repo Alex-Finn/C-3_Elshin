@@ -15,6 +15,7 @@
 using CommonServiceLocator;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using WpfTestMailSender.Service;
 using WpfTestMailSender.Services;
 
 namespace WpfTestMailSender.ViewModel
@@ -44,6 +45,7 @@ namespace WpfTestMailSender.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainWindowViewModel>();
+            SimpleIoc.Default.Register<IDataAccessService, DataAccessService>();
         }
 
         public MainWindowViewModel Main
