@@ -30,7 +30,7 @@
                 Command = "{Binding ReadAllCommand}" />
         <DataGrid x:Name = "dgEmails" Grid.Row = "2" 
                   ItemsSource = "{Binding Emails}"
-                  SelectedItem="{Binding CurrentEmail}"
+                  SelectedItem="{Binding EmailInfo}"
                   ColumnWidth = "*"
                   IsReadOnly = "True" >           
         </DataGrid>
