@@ -140,6 +140,9 @@
     <Compile Include="View\EmailInfoView.xaml.cs">
       <DependentUpon>EmailInfoView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ListViewItemScheduler.xaml.cs">
+      <DependentUpon>ListViewItemScheduler.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\SaveEmailView.xaml.cs">
       <DependentUpon>SaveEmailView.xaml</DependentUpon>
     </Compile>
@@ -152,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\EmailInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ListViewItemScheduler.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

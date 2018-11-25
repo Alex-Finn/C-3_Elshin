@@ -18,7 +18,8 @@ namespace WpfTestMailSender
     {
         DispatcherTimer timer = new DispatcherTimer(); // таймер
         EmailSendServiceClass emailSender; // экземпляр класса, отвечающего за отправку писем
-        DateTime dtSend; // дата и время отправки
+        // убираем по заданию 4го урока
+        //DateTime dtSend; // дата и время отправки
         ObservableCollection<Email> emails; // коллекция email'ов адресатов
         /// <summary>
         /// /// Методе который превращаем строку из текстбокса tbTimePicker в TimeSpan
@@ -41,10 +42,13 @@ namespace WpfTestMailSender
         /// <param name="dtSend"></param>
         /// <param name="emailSender"></param>
         /// <param name="emails"></param>
-        public void SendEmails(DateTime dtSend, EmailSendServiceClass emailSender, ObservableCollection<Email> emails)
+        // убираем по заданию 4го урока
+        //public void SendEmails(DateTime dtSend, EmailSendServiceClass emailSender, ObservableCollection<Email> emails)
+        public void SendEmails(EmailSendServiceClass emailSender, ObservableCollection<Email> emails)
         {
             this.emailSender = emailSender; // Экземпляр класса, отвечающего за отправку писем присваиваем
-            this.dtSend = dtSend;
+            // убираем по заданию 4го урока
+            //this.dtSend = dtSend;
             this.emails = emails;
             timer.Tick += Timer_Tick;
             timer.Interval = new TimeSpan(0, 0, 1);
@@ -52,12 +56,13 @@ namespace WpfTestMailSender
         }
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if (dtSend.ToShortTimeString() == DateTime.Now.ToShortTimeString())
-            {
+            // убираем по заданию 4го урока
+            //if (dtSend.ToShortTimeString() == DateTime.Now.ToShortTimeString())            
+            //{
                 emailSender.SendMails(emails);
                 timer.Stop();
                 MessageBox.Show("Письма отправлены.");
-            }
+            //}
         }
     }
 }

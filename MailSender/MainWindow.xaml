@@ -171,7 +171,20 @@
 
                     <StackPanel Grid.Column="0" Margin="3">
                         <Calendar x:Name="cldSchedulDateTimes" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionMode="MultipleRange"/>
-                        <xctk:TimePicker x:Name="tbTimePicker"/>
+                        <!--<xctk:TimePicker x:Name="tbTimePicker"/>-->
+                        <Button x:Name="btnNewLetter"
+                                    Height="25"
+                                    Width="auto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="images/add.png" Height="16" Width="16"></Image>
+                                    <TextBlock Text="Добавить письмо"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                        <ListBox Height="110" VerticalContentAlignment="Center">                            
+                            <ListBoxItem HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center">
+                                <View:ListViewItemScheduler x:Name="listViewItemScheduler"/>
+                            </ListBoxItem>
+                        </ListBox>
                         <Button x:Name="btnSend" 
                                 Margin ="0" 
                                 Width="auto"

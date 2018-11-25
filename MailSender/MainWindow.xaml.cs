@@ -91,22 +91,26 @@ namespace WpfTestMailSender
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
             SchedulerClass sc = new SchedulerClass();
-            TimeSpan tsSendTime = sc.GetSendTime(tbTimePicker.Text);
+            // убираем по заданию 4го урока
+            /*TimeSpan tsSendTime = sc.GetSendTime(tbTimePicker.Text);
             if (tsSendTime == new TimeSpan())
             {
                 MessageBox.Show("Некорректный формат даты");
                 return;
-            }
-            DateTime dtSendDateTime = (cldSchedulDateTimes.SelectedDate ?? DateTime.Today).Add(tsSendTime);
+            }*/
+            // убираем по заданию 4го урока
+            /*DateTime dtSendDateTime = (cldSchedulDateTimes.SelectedDate ?? DateTime.Today).Add(tsSendTime);
             if (dtSendDateTime < DateTime.Now)
             {
                 MessageBox.Show("Дата и время отправки писем не могут быть раньше, чем настоящее время");
                 return;
-            }
+            }*/
             EmailSendServiceClass emailSender = new EmailSendServiceClass(cbSenderSelect.Text,
                 cbSenderSelect.SelectedValue.ToString());
             var locator = (ViewModelLocator)FindResource("Locator");
-            sc.SendEmails(dtSendDateTime, emailSender, locator.Main.Emails);            
+            // убираем по заданию 4го урока
+            //sc.SendEmails(dtSendDateTime, emailSender, locator.Main.Emails);
+            sc.SendEmails(emailSender, locator.Main.Emails);            
             
             //sc.SendEmails(dtSendDateTime, emailSender, (IQueryable<Email>)dgEmails.ItemsSource);
         }
