@@ -42,8 +42,14 @@
                                  Width = "Auto" Height = "Auto" 
                                  Grid.ColumnSpan = "2" >
                         <!--<ToolBarTray Height="65" Width="auto" VerticalAlignment="Top">-->
-                        <ToolBar x:Name="tbSender" Height="30" VerticalAlignment="Top" Width="500" HorizontalAlignment="Left">
-                            <Label x:Name="lSender" Content="Выбрать отправителя" Height="25" VerticalAlignment="Top" Width="130"/>
+                        <ToolBar x:Name="tbSender" Height="30" 
+                                 VerticalAlignment="Top" Width="500" 
+                                 HorizontalAlignment="Left"
+                                 ToolBarTray.IsLocked="True"
+                                 Band = "0" BandIndex = "0">
+                            <Label x:Name="lSender" Content="Выбрать отправителя" Height="25" 
+                                   VerticalAlignment="Top" Width="130" 
+                                   VerticalContentAlignment="Center"/>
                             <ComboBox x:Name="cbSenderSelect" 
                                       Height="25" 
                                       Margin="0" 
@@ -81,10 +87,11 @@
                                  Height = "30" 
                                  VerticalAlignment = "Top"
                                  Width = "500" 
-                                 Band = "1" BandIndex = "0" >
+                                 Band = "1" BandIndex = "0"
+                                 ToolBarTray.IsLocked="True">
                             <Label x:Name = "lSmtp" 
                                    Content = "Выбрать smtp-сервер" 
-                                   Height = "25" Width = "130" />
+                                   Height = "25" Width = "130" VerticalContentAlignment="Center" />
                             <ComboBox x:Name = "cbSmtpSelect" 
                                       Height = "25" 
                                       Margin = "0" 
@@ -113,29 +120,38 @@
                             </Button>
                         </ToolBar>
                         <ToolBar x:Name = "tbPlanner" 
-                                 Height = "30"
-                                 Width = "230" 
-                                 Band = "0" BandIndex = "1" 
+                                 Height = "30"                                  
                                  HorizontalContentAlignment="Stretch" 
-                                 VerticalContentAlignment="Stretch" >
+                                 VerticalContentAlignment="Stretch"
+                                 ToolBarTray.IsLocked="True" Margin="0" 
+                                 HorizontalAlignment="Left" Width="230"
+                                 Band = "0" BandIndex = "1">
                             <Label x:Name = "lPlanner" 
                                    Content = "Перейти в планировщик" 
-                                   Height = "25" Width = "Auto" VerticalContentAlignment="Stretch" />
+                                   DockPanel.Dock="Left" Width = "auto" 
+                                   VerticalContentAlignment="Center" 
+                                   HorizontalContentAlignment="Center" />
                             <Button x:Name = "btnClock" 
-                                    Width = "25" Height = "25" 
+                                    DockPanel.Dock="Right"
+                                    Width = "25" 
                                     MinWidth="25" MinHeight="25"
-                                    ToolTip = "Перейти в планировщик" Click="btnClock_Click" HorizontalAlignment="Right" VerticalAlignment="Stretch" HorizontalContentAlignment="Center">
+                                    ToolTip = "Перейти в планировщик" Click="btnClock_Click" 
+                                    HorizontalAlignment="Right" 
+                                    VerticalAlignment="Stretch" 
+                                    HorizontalContentAlignment="Center" 
+                                    Grid.Column="1">
                                 <Image Source = "Images\clock.png" />
-                            </Button>
+                            </Button>                            
                         </ToolBar>
                         <ToolBar x:Name = "tbAddressee" 
                                  Height = "30"
                                  Width = "230" 
                                  Band = "1" BandIndex = "1" 
-                                 VerticalAlignment="Top" >
+                                 VerticalAlignment="Top"
+                                 ToolBarTray.IsLocked="True">
                             <Label x:Name = "lAddressee" 
                                    Content = "Список адресатов" 
-                                   Height = "25" Width = "Auto" />
+                                   Height = "25" Width = "Auto" VerticalContentAlignment="Center" />
                             <Button x:Name = "btnAddAddressee" 
                                     Width = "25" Height = "25" 
                                     MinWidth="25" MinHeight="25" 
@@ -175,12 +191,12 @@
                         <Button x:Name="btnNewLetter"
                                     Height="25"
                                     Width="auto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Source="images/add.png" Height="16" Width="16"></Image>
-                                    <TextBlock Text="Добавить письмо"></TextBlock>
-                                </StackPanel>
-                            </Button>
-                        <ListBox Height="110" VerticalContentAlignment="Center">                            
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="images/add.png" Height="16" Width="16"></Image>
+                                <TextBlock Text="Добавить письмо"></TextBlock>
+                            </StackPanel>
+                        </Button>
+                        <ListBox Height="110" VerticalContentAlignment="Center">
                             <ListBoxItem HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center">
                                 <View:ListViewItemScheduler x:Name="listViewItemScheduler"/>
                             </ListBoxItem>

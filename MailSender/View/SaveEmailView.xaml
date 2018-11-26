@@ -17,22 +17,31 @@
             <RowDefinition Height= "Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width= "Auto" />
-            <ColumnDefinition Width= "Auto" />
+            <ColumnDefinition Width= "auto" />
+            <ColumnDefinition Width="100" />
         </Grid.ColumnDefinitions>
-        <TextBlock TextWrapping= "Wrap" Text= "Id:" />
+        <TextBlock TextWrapping= "Wrap" Text= "Id:" Margin="0" />
         <TextBlock Grid.Row= "1" TextWrapping= "Wrap" Text= "Value:" />
         <TextBlock Grid.Row= "2" TextWrapping= "Wrap" Text= "Name:" />
-        <TextBox Grid.Column= "1" TextWrapping= "Wrap" Text= "{Binding EmailInfo.Id,Mode=TwoWay}" />
-        <TextBox Grid.Column= "1" Grid.Row= "1" TextWrapping= "Wrap" 
+        <TextBox Grid.Column= "1" 
+                 TextWrapping= "WrapWithOverflow" 
+                 Text= "{Binding EmailInfo.Id,Mode=TwoWay}" 
+                 ScrollViewer.CanContentScroll="True"
+                 HorizontalScrollBarVisibility="Auto"/>
+        <TextBox Grid.Column= "1" Grid.Row= "1" 
+                 TextWrapping= "WrapWithOverflow"
+                 HorizontalScrollBarVisibility="Auto"
+                 ScrollViewer.CanContentScroll="True"
                  Text= "{Binding EmailInfo.Value,Mode=TwoWay}" />
-        <TextBox Grid.Column= "1" Grid.Row= "2" TextWrapping= "Wrap" 
-                 Text= "{Binding EmailInfo.Name,Mode=TwoWay}" />
+        <TextBox Grid.Column= "1" Grid.Row= "2" 
+                 TextWrapping= "WrapWithOverflow" 
+                 HorizontalScrollBarVisibility="Auto"
+                 ScrollViewer.CanContentScroll="True"
+                 Text= "{Binding EmailInfo.Name,Mode=TwoWay}"/>
         <Button Content= "Сохранить"
-                FontWeight= "Bold" Grid.Row= "5"
+                FontWeight= "Bold" Grid.Row= "4"
                 Grid.ColumnSpan= "2"
                 Command= "{Binding SaveCommand}" 
-                CommandParameter= "{Binding EmailInfo}" 
-                Height= "22" Width= "140" />
+                CommandParameter= "{Binding EmailInfo}" />
     </Grid>
 </UserControl>
