@@ -125,6 +125,8 @@
     </Compile>
     <Compile Include="SchedulerClass.cs" />
     <Compile Include="Services\DataAccessService.cs" />
+    <Compile Include="Services\NameValidation.cs" />
+    <Compile Include="Services\IDValidation.cs" />
     <Compile Include="Services\IDataAccessService.cs" />
     <Compile Include="Services\XmlFileAccessService.cs" />
     <Compile Include="VariablesClass.cs" />

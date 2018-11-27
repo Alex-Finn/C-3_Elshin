@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfTestMailSender.View"
+             xmlns:v="clr-namespace:WpfTestMailSender.Services"
              xmlns:ignore= "http://www.galasoft.ch/ignore"
              mc:Ignorable= "d ignore"
              DataContext= "{Binding Main, Source={StaticResource Locator}}" 
@@ -23,21 +24,49 @@
         <TextBlock TextWrapping= "Wrap" Text= "Id:" Margin="0" />
         <TextBlock Grid.Row= "1" TextWrapping= "Wrap" Text= "Value:" />
         <TextBlock Grid.Row= "2" TextWrapping= "Wrap" Text= "Name:" />
-        <TextBox Grid.Column= "1" 
-                 TextWrapping= "WrapWithOverflow" 
-                 Text= "{Binding EmailInfo.Id,Mode=TwoWay}" 
+        <TextBox Name="tbIDField"
+                 Grid.Column= "1" 
+                 TextWrapping= "WrapWithOverflow"                                   
                  ScrollViewer.CanContentScroll="True"
-                 HorizontalScrollBarVisibility="Auto"/>
-        <TextBox Grid.Column= "1" Grid.Row= "1" 
+                 HorizontalScrollBarVisibility="Auto"    
+                 Validation.Error="Validation_Error">
+            <TextBox.Text>
+                <Binding Path = "EmailInfo.Id" 
+                         Mode = "TwoWay" 
+                         ValidatesOnExceptions = "True"
+                         ValidatesOnDataErrors = "True" 
+                         NotifyOnValidationError = "True" >
+                    <Binding.ValidationRules >
+                        <v:IDValidation/>
+                    </Binding.ValidationRules >
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox Name="tbValueField"
+                 Grid.Column= "1" Grid.Row= "1" 
                  TextWrapping= "WrapWithOverflow"
                  HorizontalScrollBarVisibility="Auto"
                  ScrollViewer.CanContentScroll="True"
-                 Text= "{Binding EmailInfo.Value,Mode=TwoWay}" />
-        <TextBox Grid.Column= "1" Grid.Row= "2" 
+                 Text= "{Binding EmailInfo.Value,Mode=TwoWay, NotifyOnValidationError=True}"
+                 Validation.Error="Validation_Error"/>
+        <TextBox Name="tbNameField"
+                 Grid.Column= "1" Grid.Row= "2" 
                  TextWrapping= "WrapWithOverflow" 
                  HorizontalScrollBarVisibility="Auto"
-                 ScrollViewer.CanContentScroll="True"
-                 Text= "{Binding EmailInfo.Name,Mode=TwoWay}"/>
+                 ScrollViewer.CanContentScroll="True"                 
+                 Validation.Error="Validation_Error">
+            <TextBox.Text>
+                <Binding Path="EmailInfo.Name"
+                         Mode="TwoWay"
+                         ValidatesOnExceptions="True"
+                         ValidatesOnDataErrors="True"
+                         NotifyOnValidationError="True">
+                    <Binding.ValidationRules>
+                        <v:NameValidation/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>            
+        </TextBox>
         <Button Content= "Сохранить"
                 FontWeight= "Bold" Grid.Row= "4"
                 Grid.ColumnSpan= "2"

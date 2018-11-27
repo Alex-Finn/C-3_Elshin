@@ -54,4 +54,3 @@ K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\View\SaveEmailView.baml
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\View\ListViewItemScheduler.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\View\ListViewItemScheduler.baml
-K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WpfTestMailSender.csprojAssemblyReference.cache
