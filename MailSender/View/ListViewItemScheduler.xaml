@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="WpfTestMailSender.View.ListViewItemScheduler"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfTestMailSender.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="25" d:DesignWidth="200"
+             DataContext = "{Binding Main, Source={StaticResource Locator}}" 
+             Height="20" 
+             Foreground="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Button Name="btnNewTextMessage" 
+                Width="20" Height="20" 
+                HorizontalAlignment="Left">
+            <Button.Content>
+                <Image Source="/WpfTestMailSender;component/images/add.png"/>
+            </Button.Content>
+        </Button>
+        <TextBox Grid.Column="1" 
+                 MinWidth="100" 
+                 HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"/>
+        <Button Grid.Column="2" 
+                Name="btnDeleteFromListView" 
+                Width="20" Height="20" 
+                HorizontalContentAlignment="Center" 
+                HorizontalAlignment="Right">
+            <Button.Content>
+                <Image Source="/WpfTestMailSender;component/images/remove.png"/>
+            </Button.Content>
+        </Button>  
+    </Grid>
+</UserControl>

@@ -23,13 +23,11 @@ K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\MailSenderLib.pdb
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSender.csprojAssemblyReference.cache
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\ShinyBlue.baml
-K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MainWindow.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MessageSendCompletedDlg.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\App.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSender_MarkupCompile.cache
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSender_MarkupCompile.lref
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\App.baml
-K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MainWindow.baml
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MessageSendCompletedDlg.baml
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSender.g.resources
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSender.Properties.Resources.resources
@@ -38,3 +36,7 @@ K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSender.csproj.CopyComplete
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSender.exe
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSender.pdb
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MainWindow.g.cs
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSenderWindow.g.cs
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MailSenderWindow.baml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\MainWindow.baml
