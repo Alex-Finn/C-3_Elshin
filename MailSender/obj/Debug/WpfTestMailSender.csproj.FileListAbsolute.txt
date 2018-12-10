@@ -54,3 +54,13 @@ K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\View\SaveEmailView.baml
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\View\ListViewItemScheduler.g.cs
 K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\View\ListViewItemScheduler.baml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\EntityFramework.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\EntityFramework.SqlServer.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\EntityFramework.xml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\EntityFramework.SqlServer.xml
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\ru\EntityFramework.resources.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\obj\Debug\WpfTestMailSender.csprojAssemblyReference.cache
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\Common.dll
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\Common.pdb
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\Common.dll.config
+K:\DATA\Мои документы\Учёба\МИП\C#\GeekBrains\C#_3 курс\C_Sharp-3_Elshin\MailSender\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

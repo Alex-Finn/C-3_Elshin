@@ -48,9 +48,9 @@ namespace WpfTestMailSender
                 }
             }
         } //private void SendMail(string mail, string name)
-        public void SendMails (ObservableCollection<Email> emails)
+        public void SendMails (ObservableCollection<Common.Email> emails)
         {
-            foreach (Email email in emails)
+            foreach (Common.Email email in emails)
             {
                 SendMail (email.Value, email.Name);
             }

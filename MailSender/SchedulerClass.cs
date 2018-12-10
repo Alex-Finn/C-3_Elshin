@@ -20,7 +20,7 @@ namespace WpfTestMailSender
         EmailSendServiceClass emailSender; // экземпляр класса, отвечающего за отправку писем
         // убираем по заданию 4го урока
         //DateTime dtSend; // дата и время отправки
-        ObservableCollection<Email> emails; // коллекция email'ов адресатов
+        ObservableCollection<Common.Email> emails; // коллекция email'ов адресатов
         /// <summary>
         /// /// Методе который превращаем строку из текстбокса tbTimePicker в TimeSpan
         /// /// </summary>
@@ -44,7 +44,7 @@ namespace WpfTestMailSender
         /// <param name="emails"></param>
         // убираем по заданию 4го урока
         //public void SendEmails(DateTime dtSend, EmailSendServiceClass emailSender, ObservableCollection<Email> emails)
-        public void SendEmails(EmailSendServiceClass emailSender, ObservableCollection<Email> emails)
+        public void SendEmails(EmailSendServiceClass emailSender, ObservableCollection<Common.Email> emails)
         {
             this.emailSender = emailSender; // Экземпляр класса, отвечающего за отправку писем присваиваем
             // убираем по заданию 4го урока

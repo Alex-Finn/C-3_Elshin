@@ -3,6 +3,7 @@ using GalaSoft.MvvmLight.Command;
 using System.Collections.ObjectModel;
 using WpfTestMailSender.Service;
 using WpfTestMailSender.Services;
+using Common;
 
 namespace WpfTestMailSender.ViewModel
 {
@@ -20,8 +21,8 @@ namespace WpfTestMailSender.ViewModel
     /// </summary>
     public class MainWindowViewModel : ViewModelBase
     {
-        Email _EmailInfo;
-        public Email EmailInfo
+        Common.Email _EmailInfo;
+        public Common.Email EmailInfo
         {
             get { return _EmailInfo; }
             set
@@ -31,9 +32,9 @@ namespace WpfTestMailSender.ViewModel
             }
         }
 
-        ObservableCollection<Email> _Emails;
+        ObservableCollection<Common.Email> _Emails;
 
-        public ObservableCollection<Email> Emails
+        public ObservableCollection<Common.Email> Emails
         {
             get { return _Emails; }
             set
@@ -54,9 +55,9 @@ namespace WpfTestMailSender.ViewModel
             }
         }
 
-        void SaveEmail(Email email)
+        void SaveEmail(Common.Email email)
         {
-            EmailInfo.Id = _serviceProxy.CreateEmail(email);
+            EmailInfo.Id = _serviceProxy.AddEmail(email);
             if (EmailInfo.Id != 0)
             {
                 Emails.Add(EmailInfo);
@@ -65,15 +66,15 @@ namespace WpfTestMailSender.ViewModel
         }
 
         public RelayCommand ReadAllCommand { get; set; }
-        public RelayCommand<Email> SaveCommand { get; set; }
+        public RelayCommand<Common.Email> SaveCommand { get; set; }
 
         public MainWindowViewModel(IDataAccessService servProxy)
         {
             _serviceProxy = servProxy;
-            Emails = new ObservableCollection<Email>();
-            EmailInfo = new Email();
+            Emails = new ObservableCollection<Common.Email>();
+            EmailInfo = new Common.Email();
             ReadAllCommand = new RelayCommand(GetEmails);
-            SaveCommand = new RelayCommand<Email>(SaveEmail);
+            SaveCommand = new RelayCommand<Common.Email>(SaveEmail);
         }
 
         /// <summary>

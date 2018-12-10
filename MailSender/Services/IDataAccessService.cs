@@ -4,7 +4,9 @@ namespace WpfTestMailSender.Service
 {
     public interface IDataAccessService
     {
-        ObservableCollection<Email> GetEmails();
-        int CreateEmail(Email email);
+        ObservableCollection<Common.Email> GetEmails();
+        int AddEmail(Common.Email email);
+        int UpdateEmail(Common.Email email);
+        int DeleteEmail(Common.Email email);
     }
 }
